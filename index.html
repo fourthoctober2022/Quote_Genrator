@@ -1,34 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quote Genrator</title>
-    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=css-tricks.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="quote-container" id ="quote-container">
-        <!-- <--Quote-->
-        <div class="quote-text">
-            <i class="fas fa-quote-left"></i>
-            <span id="quote">Beauty is curse without merits and beauty is increase with merits.</span>
-         </div>
-        <!-- <--Author-->  
-        <div class="quote-author">
-            <span id="author">Buddha</span>
-        </div>
-        <!-- <--Buttons> -->
-            <div class="button-container">
-                <button class="twitter-button id="twitter" title="Tweet Here!">
-                    <i class="fab fa-twitter"></i>
-                </button>
-                <button id="new-quote">New Quote</button>
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quote Generator</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=css-tricks.com">
+        <!-- Fontawesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <!-- My CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- Quote Container -->
+        <div class="quote-container" id="quote-container">
+            <!-- Quote -->
+            <div class="quote-text">
+                <i class="fa-solid fa-quote-left"></i>
+                <span id="quote"></span>
             </div>
-    </div>
-    <!-- Script -->
-    <script src="quotes.js"></script>
-    <script src="script.js"></script>
-</body>
+            <!-- Author -->
+            <div class="quote-author">
+                <div id="author"></div>
+            </div>
+            <!-- Buttons -->
+            <div class="button-container">
+                <button class="twitter-btn" id="twitter" title="Tweet This!">
+                    <i class="fa-brands fa-twitter"></i>
+                </button>
+                <button class="newquote-btn" id="new-quote">New Quote</button>
+            </div>
+        </div>
+
+        <!-- Loader -->
+        <div class="loader" id="loader"></div>
+
+        <!-- Javascript -->
+
+        <!-- list of quotes -->
+        <!-- <script src="quotes.js"></script> -->
+
+        <!-- Fetch quotes from API -->
+        <script src="script.js"></script>
+    </body>
+
+    </html>
